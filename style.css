@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+#pokedex {
+    height: 50vh;
+    width: 230px;
+    background-color: rgb(194, 26, 26);
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.imgArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainField {
+    display: flex;
+    padding: 16px;
+    /*padding-top: 64px;*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemonCard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemonNameId {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 100vh;
+    margin-top: -40px;
+    min-height: 100px;
+    width: 90%;
+}
+
+.infoArea {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding-left: 0px;
+    align-items: center;
+}
+
+.pokemonImage {
+    margin-top: 50px;
+    padding-bottom: 32px;
+    /*margin-left: 24px;*/
+    height: 124px;
+    width: 100px;
+    object-fit: contain;
+
+}
+
+.pokemonType {
+    border-radius: 8px;
+    /*background-color: rgb(194, 26, 26);*/
+    display: flex;
+    /*padding: 8px;*/
+    height: 64px;
+   
+}
+
+.fire {
+    background-color: rgb(194, 26, 26);
+}
+.grass {
+    background-color: rgb(50, 194, 67) !important;
+}
+.poison {
+    background-color: rgb(92, 15, 95) !important;
+}
+.water {
+    background-color: rgb(77, 93, 236) !important;
+}
+.bug {
+    background-color: rgb(39, 139, 81) !important;
+}
+.normal {
+    background-color: rgb(204, 199, 199) !important;
+}
+.flying {
+    background-color: rgb(194, 26, 172) !important;
+}
