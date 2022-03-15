@@ -18,7 +18,6 @@ async function loadPokemons(limit, offset) {
         let response = await fetch(url);
         let pokemon = await response.json(); // Wandelt Text in JSON um
         pokemons.push(pokemon); // Push in das globale Array pokemons (siehe Zeile 3)
-
     }
 
     console.log(pokemons);
