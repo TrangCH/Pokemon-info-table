@@ -89,27 +89,54 @@ h1 {
    
 }
 
+/* Pokémon types */
+.normal {
+    background-color: rgb(204, 199, 199) !important;
+}
 .fire {
     background-color: rgb(194, 26, 26);
 }
-.grass {
-    background-color: rgb(50, 194, 67) !important;
-}
-.poison {
-    background-color: rgb(92, 15, 95) !important;
-}
 .water {
-    background-color: rgb(77, 93, 236) !important;
+    background-color: rgb(19, 39, 212) !important;
+}
+.electric {
+    background-color: rgb(255, 255, 0) !important;
+}
+.grass {
+    background-color: rgb(37, 158, 51) !important;
+}
+.flying {
+    background-color: rgb(3, 103, 197) !important;
 }
 .bug {
     background-color: rgb(39, 139, 81) !important;
 }
-.normal {
-    background-color: rgb(204, 199, 199) !important;
+.poison {
+    background-color: rgb(143, 46, 143) !important;
 }
-.flying {
-    background-color: rgb(194, 26, 172) !important;
+.rock {
+    background-color: rgb(124, 97, 75) !important;
 }
+.ground {
+    background-color: rgb(165, 116, 75) !important;
+}
+.fighting {
+    background-color: rgb(211, 79, 38) !important;
+}
+.ice {
+    background-color: rgb(38, 176, 211) !important;
+}
+.psychic {
+    background-color: rgb(211, 38, 188) !important;
+}
+.ghost {
+    background-color: rgb(133, 28, 175) !important;
+}
+.dragon {
+    background-color: rgb(109, 45, 211) !important;
+}
+
+
 
 @media (max-width: 375px) {
     .input {

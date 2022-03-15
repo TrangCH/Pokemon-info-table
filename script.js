@@ -124,18 +124,14 @@ function renderPokemonInfo() {
 }
 
 
-
-
 // pokemons[i]['types'] = types
 function printTypes(types) {
     let typesCollection = [];
 
     for (let i = 0; i < types.length; i++) {
-
         const type = types[i]['type']['name'];
         // hier result erweitern
         typesCollection.push(type);
-
     }
     return typesCollection.join('<br> ');
 }
@@ -144,11 +140,9 @@ function printAbilities(abilities) {
     let abilitiesCollection = [];
 
     for (let i = 0; i < abilities.length; i++) {
-
         const ability = abilities[i]['ability']['name'];
         // hier result erweitern
         abilitiesCollection.push(ability);
-
     }
     return abilitiesCollection.join('<br> ');
 }
@@ -157,10 +151,9 @@ function printAbilities(abilities) {
  * It filters out what you are looking for.
  */
 
-function filterNames() {
+function filterRenderPokemonInfo() {
     let search = document.getElementById('search').value;
     search = search.toLowerCase(); // Nur kleine Buchstaben
-    console.log(search);
 
     let list = document.getElementById('list');
     list.innerHTML = '';
