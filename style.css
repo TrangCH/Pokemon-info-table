@@ -12,8 +12,8 @@ h1 {
 }
 
 #pokedex {
-    height: 50vh;
-    width: 230px;
+    height: 350px;
+    width: 250px;
     background-color: rgb(194, 26, 26);
     color: white;
     padding: 24px;
@@ -41,10 +41,11 @@ h1 {
 }
 
 .pokemonCard {
-    width: 250px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .pokemonNameId {
@@ -54,12 +55,11 @@ h1 {
 
 .info-container {
     background-color: white;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 100vh;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
     margin-top: -40px;
-    min-height: 100px;
-    width: 90%;
+    width: 250px;
+    box-shadow: 0px 0px 10px -6px;
 }
 
 .infoArea {
@@ -73,11 +73,9 @@ h1 {
 .pokemonImage {
     margin-top: 50px;
     padding-bottom: 32px;
-    /*margin-left: 24px;*/
-    height: 124px;
+    height: 132px;
     width: 100px;
     object-fit: contain;
-
 }
 
 .pokemonType {
