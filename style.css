@@ -87,6 +87,11 @@ h1 {
    
 }
 
+.progress-width {
+    width: 325px;
+    margin-bottom: 16px;
+}
+
 /* Pokémon types */
 .normal {
     background-color: rgb(204, 199, 199) !important;

@@ -18,6 +18,34 @@ async function loadPokemons(limit, offset) {
         let response = await fetch(url);
         let pokemon = await response.json(); // Wandelt Text in JSON um
         pokemons.push(pokemon); // Push in das globale Array pokemons (siehe Zeile 3)
+
+        if (i == 38 || i == 75 || i == 113 || i == 150) {
+            let percent = i / pokemonList.results.length;
+            percent = Math.round(percent * 100); // aufrunden
+
+            document.getElementById('progress-bar').innerHTML = `${percent} %`;
+            document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+        }
+        //} else if (i = 76) {
+        //    let percent = i / pokemonList.results.length;
+        //    percent = Math.round(percent * 100); // aufrunden
+        //
+        //    document.getElementById('progress-bar').innerHTML = `${percent} %`;
+        //    document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+        //    } else if (i = 114) {
+        //        let percent = i / pokemonList.results.length;
+        //        percent = Math.round(percent * 100); // aufrunden
+        //    
+        //        document.getElementById('progress-bar').innerHTML = `${percent} %`;
+        //        document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+        //        } else if (i = 151) {
+        //            let percent = i / pokemonList.results.length;
+        //            percent = Math.round(percent * 100); // aufrunden
+        //        
+        //            document.getElementById('progress-bar').innerHTML = `${percent} %`;
+        //            document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+        //            }
+
     }
 
     console.log(pokemons);
