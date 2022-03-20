@@ -145,10 +145,20 @@ h1 {
     .input {
         width: 275px !important;
     }
+
+    .progress-width {
+        width: 275px;
+    }
+    
 }
 
 @media (max-width: 312px) {
     .input {
         width: 250px !important;
     }
+
+    .progress-width {
+        width: 250px;
+    }
+    
 }
