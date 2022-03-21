@@ -25,6 +25,10 @@ async function loadPokemons(limit, offset) {
             percent = Math.round(percent * 100); // aufrunden
 
            updateProgressBar(percent);
+           
+            if (i == 150) {
+                addDNoneProgressBarAfterWork();
+            }
         }
     }
 
@@ -38,6 +42,12 @@ async function loadPokemons(limit, offset) {
 function updateProgressBar(percent) {
     document.getElementById('progress-bar').innerHTML = `${percent} %`;
     document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+}
+
+function addDNoneProgressBarAfterWork() {
+    setTimeout(() => {
+        document.getElementById('progress').classList.add("d-none");
+    }, 15500);
 }
 
 /**
