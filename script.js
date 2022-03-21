@@ -20,36 +20,24 @@ async function loadPokemons(limit, offset) {
         pokemons.push(pokemon); // Push in das globale Array pokemons (siehe Zeile 3)
 
         if (i == 38 || i == 75 || i == 113 || i == 150) {
-            let percent = i / pokemonList.results.length;
+            let pokeList = pokemonList.results.length - 1;
+            let percent = i / pokeList;
             percent = Math.round(percent * 100); // aufrunden
 
-            document.getElementById('progress-bar').innerHTML = `${percent} %`;
-            document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+           updateProgressBar(percent);
         }
-        //} else if (i = 76) {
-        //    let percent = i / pokemonList.results.length;
-        //    percent = Math.round(percent * 100); // aufrunden
-        //
-        //    document.getElementById('progress-bar').innerHTML = `${percent} %`;
-        //    document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
-        //    } else if (i = 114) {
-        //        let percent = i / pokemonList.results.length;
-        //        percent = Math.round(percent * 100); // aufrunden
-        //    
-        //        document.getElementById('progress-bar').innerHTML = `${percent} %`;
-        //        document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
-        //        } else if (i = 151) {
-        //            let percent = i / pokemonList.results.length;
-        //            percent = Math.round(percent * 100); // aufrunden
-        //        
-        //            document.getElementById('progress-bar').innerHTML = `${percent} %`;
-        //            document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
-        //            }
-
     }
 
     console.log(pokemons);
     loadPokemon();
+}
+
+/**
+ * Update progress-bar
+ */
+function updateProgressBar(percent) {
+    document.getElementById('progress-bar').innerHTML = `${percent} %`;
+    document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
 }
 
 /**
