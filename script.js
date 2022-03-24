@@ -47,7 +47,7 @@ function updateProgressBar(percent) {
 function addDNoneProgressBarAfterWork() {
     setTimeout(() => {
         document.getElementById('progress').classList.add("d-none");
-    }, 15500);
+    }, 15000);
 }
 
 /**
